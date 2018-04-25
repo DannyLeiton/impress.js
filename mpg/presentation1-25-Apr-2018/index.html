@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Anteproyecto de Graduación</title>
+    <meta name="description" content="2D navigation demo" />
+    <meta name="author" content="Henrik Ingo" />
+    <link href="css/presentation.css" rel="stylesheet" />
+</head>
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<!-- Some images that are fixed to background in the css -->
+<img id="applepie-image" class="bg" src="images/AML_Ops.png">
+<img id="icecream-image" class="bg" src="images/AML_Gov.png">
+<img id="crisps-image" class="bg" src="images/AML_Dev.png">
+
+<div id="impress" data-transition-duration="1000">
+
+    <div class="step" data-scale="2" data-x="-500" data-y="-500">
+        <h2>Anteproyecto de Graduación</h2>
+        <img id="tec-image" class="logo-tec" src="images/Tec.png">
+        <h4>Maestría Profesional con énfasis en Sistemas de Información</h4>
+        <h3>"Definición de la Gestión del Ciclo de Vida de las Aplicaciones en el Departamento de Computación en la Nube de la empresa IBM"</h2>
+        <h4>Daniel Leitón Rivera - 200914530</h4>
+        <h5>Abril, 2018</h5>
+    </div>
+
+    <div id="contents" class="step" data-rel-x="1500" data-rel-y="1500" data-scale="1">
+        <h2>Agenda</h2>
+        <ul>
+            <li>¿Qué es la Gestión del Ciclo de Vida de las Aplicaciones?</li>
+            <li>Descripción de IBM</li>
+            <li>Descripción del Problema</li>
+            <li>Trabajos Similares</li>
+            <li>Definición del Problema</li>
+            <li>Justificación del Proyecto</li>
+            <li>Objetivo General</li>
+            <li>Objetivos Específicos</li>
+        </ul>
+    </div>
+
+    <!-- Ice cream slides (3) -->
+    <div id="icecream" class="step" data-x="2000" data-y="2000"
+         data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
+         data-goto-next-list="contents icecream-pro contents crisps">
+        <h2>Gestión del Ciclo de Vida de las Aplicaciones (GCA)</h2>
+        <ul>
+            <li>Gestión del ciclo de vida de los programas informáticos</li>
+            <ol>
+                <li>Gobierno</li>
+                <li>Requerimientos</li>
+                <li>Arquitectura de Software</li>
+                <li>Desarrollo</li>
+                <li>Pruebas</li>
+                <li>Mantenimiento</li>
+                <li>Gestión de Cambios</li>
+                <li>Gestión de Proyectos</li>
+                <li>Despliegue de Versiones</li>
+            </ol>
+            <li>ALM > SDLC</li>
+            <li>Incluye todo el tiempo = dinero gastado en este activo</li>
+            <li>Idea inicial => Final de la vida de la aplicación</li>
+        </ul>
+    </div>
+
+    <div id="icecream-pro" class="step" data-rel-x="0" data-rel-y="1000"
+         data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
+         data-goto-next-list="icecream icecream-con applepie crisps-pro">
+        <h2>Descripción de IBM</h2>
+        <ul>
+            <li>En el Mundo</li>
+            <ul>
+                <li>Fundada en 1911</li>
+                <li>425,000 empleados</li>
+                <li>Líder en Patentes en EEUU</li>
+            </ul>
+            <li>En Costa Rica</li>
+            <ul> 
+                <li>Finanzas</li>
+                <li>Cadenas de Suministro</li>
+                <li>Soporte de Operaciones</li>
+                <li>Análisis de Negocio</li>
+                <li>Administración de Proyectos</li>
+                <li>Soporte de Operaciones</li>
+                <li>Computación en la Nube</li>
+            </ul>
+        </ul>
+    </div>
+
+
+    <div id="icecream-con" class="step" data-rel-x="0" data-rel-y="1000"
+         data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
+         data-goto-next-list="icecream-pro crisps applepie-pro crisps-con">
+         <h2>Descripción de IBM</h2>
+         <ul>
+             <li>Computación en la Nube</li>
+             <ul> 
+                 <li>Sistemas Operativos</li>
+                 <li>SAP</li>
+                 <li>Oracle</li>
+                 <li>Soporte al Usuario Final</li>
+                 <li>Gestión de Infraestructura</li>
+                 <li>Ejecutivos de Entrega de Proyectos </li>
+                 <li>Operaciones de Desarrollo (DevOps)</li>
+             </ul>
+             <li>Operaciones de Desarrollo (DevOps)</li>
+             <ul> 
+                 <li>Inició en 2017</li>
+                 <li>Presta servicios de desarrollo a nivel Global</li>
+                 <li>Servicios de Aplicaciones Gestionadas en la nube</li>
+                 <li>Desarrolla proyectos internos y de I&amp;D</li>
+             </ul>
+         </ul>
+    </div>
+
+    <!-- Crisps slides (3) -->
+    <div id="crisps" class="step" data-x="3500" data-y="2000"
+         data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
+         data-goto-next-list="icecream-con crisps-pro icecream applepie">
+         <h2>Descripción del Problema</h2>
+         <ul>
+             <li>No posee documentación de procesos para:</li>
+             <ol>
+                <li>Definición de Requerimientos</li>
+                <li>Criterios de Aceptación</li>
+                <li>Diseño de la Interfaz y Experiencia de Usuario</li>
+                <li>Desarrollo de Software</li>
+                <li>Pruebas de las funcionalidades</li>
+                <li>Configuración de Ambientes</li>
+                <li>Integración de código fuente</li>
+                <li>Despliegue de las versiones</li>
+                <li>Gestión de Cambios</li>
+            </ol>
+            <li>Inexistencia de Definición de Roles => Falta de Especialización</li>
+         </ul>
+    </div>
+
+    <div id="crisps-pro" class="step" data-rel-x="0" data-rel-y="1000"
+         data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
+         data-goto-next-list="crisps crisps-con icecream-pro applepie-pro">
+         <h2>Descripción del Problema</h2>
+         <ol>
+             <li>El “Libro de Jugadas” no describe una línea de producción de software</li>
+             <li>En cada proyecto se siguen procesos de la GCA de forma heterogénea</li>
+             <li>Complejidad para auditar los sistemas</li>
+             <li>Dificultad para encontrar el origen de los errores</li>
+         </ol>
+    </div>
+
+    <div id="crisps-con" class="step" data-rel-x="0" data-rel-y="1000"
+         data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
+         data-goto-next-list="crisps-pro applepie icecream-con applepie-con">
+         <h3>Trabajos Similares</h3>
+         <ul>
+             <li>Mejora de procesos para fomentar la competitividad de la pequeña y mediana industria del software de Iberoamérica</li>
+             <li>Modelo COMPETISOFT</li>
+             <ol>
+                <li>Gestión de Negocio</li>
+                <li>Gestión de Procesos</li>
+                <li>Gestión de Proyectos</li>
+                <li>Gestión de Recursos</li>
+                <li>Gestión de Conocimiento</li>
+                <li>Desarrollo de Software</li>
+                <li>Mantenimiento de Software</li>
+            </ol>
+            <li>Metodología para el aseguramiento de la calidad en el desarrollo de aplicaciones para dispositivos móviles</li>
+            <ol>
+                <li>“Automated testing framework for mobile applications based in user-interaction features and historical bug information”</li>
+                <li>"A Top-Down Design Approach for an Automated Testing Framework"</li>
+            </ol>
+         </ul>
+    </div>
+
+    <!-- Apple pie slides (3) -->
+    <div id="applepie" class="step" data-x="5000" data-y="2000"
+         data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
+         data-goto-next-list="crisps-con applepie-pro crisps icecream-pro">
+        <h2>Definición del Problema</h2>
+        <h3>¿Cómo debe realizarse la Gestión del Ciclo de vida de las Aplicaciones (GCA) en el Departamento de Computación en la nube de IBM?</h3>
+        <p> o Proceso de Construcción de Aplicaciones</p>
+    </div>
+
+    <div id="applepie-pro" class="step" data-rel-x="0" data-rel-y="1000"
+         data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
+         data-goto-next-list="applepie applepie-con crisps-pro icecream-con">
+        <h2>Justificación del Proyecto</h2>
+        <ul>
+            <li>Existe la intención de Crear una Fábrica de Software en Costa Rica</li>
+            <li>Datos de utilización de personal en los proyectos (Por conseguir)</li>
+            <li>Definir Roles, Responsabilidades y campos de especialización de los miembros de los equipos</li>
+            <li>Materialización de Pruebas de Concepto (POC)</li>
+            <li>Expansión de los Productos Viables Mínimos (MVP)</li>
+            <li>Utilizar los Estándares de la Industria</li>
+            <li>Impulsar el uso de "agile" y "Design Thinking"</li>
+            <li>Facilitar Auditoría de Sistemas</li>
+        </ul>
+    </div>
+
+    <div id="applepie-con" class="step" data-rel-x="0" data-rel-y="1000"
+         data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
+         data-goto-next-list="applepie-pro conclusion crisps-con conclusion">
+        <h2>Objetivo General</h2>
+        <h3>Definir la Gestión del Ciclo de vida de las Aplicaciones (GCA) en el Departamento de Computación en la Nube de IBM</h3>
+    </div>
+
+    <div id="conclusion" class="step" data-rel-x="0" data-rel-y="1000"
+         data-goto-key-list="ArrowUp ArrowDown ArrowLeft ArrowRight"
+         data-goto-next-list="applepie-pro conclusion crisps-con conclusion">
+        <h2>Objetivos Específicos</h2>
+        <ol>
+            <li>Conocer las prácticas recomendadas en la industria respecto a la GCA para promover su mejora continua dentro de esta organización</li>
+            <li>Adaptar las prácticas de aseguramiento de la calidad del software en la GCA para minimizar los errores en ambiente de producción</li>
+            <li>Diseñar una línea de producción de aplicaciones que facilite la auditoría de los sistemas y su documentación</li>
+            <li>Listar las herramientas recomendadas para la GCA dentro de la plataforma IBM Cloud, también conocida como bluemix</li>
+            <li>Detallar los roles y responsabilidades de los miembros de los equipos de trabajo</li>
+        </ol>
+    </div>
+
+    <div id="conclusion2" class="step" data-rel-x="1000" data-rel-y="1000">
+        <h2>Principal Referencia Bibliográfica</h2>
+        <h4 id="image-credits"
+        >Chappel, D. : <a href="https://web.archive.org/web/20141207012857/http://www.microsoft.com/global/applicationplatform/en/us/RenderingAssets/Whitepapers/What%20is%20Application%20Lifecycle%20Management.pdf">What is Application Lifecycle Management?</a> 
+        </h4>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="2000" data-scale="9" style="pointer-events: none;">
+    </div>
+</div>
+
+<div id="impress-toolbar"></div>
+
+<div class="impress-progressbar"><div></div></div>
+<div class="impress-progress"></div>
+
+<div id="impress-help"></div>
+
+<script type="text/javascript" src="../../js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
